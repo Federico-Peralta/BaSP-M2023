@@ -1,32 +1,32 @@
 # Federico Peralta - BASP-M2023 
 
-Este repositorio contiene el código fuente y los archivos necesarios del desarrollo de una landing page solicitada por el bootcamp de Radium Rocket. El objetivo de este proyecto es recrear la página de inicio de la primera semana.
+This repository contains the source code and the necessary files of the landing page requested by the Radium Rocket bootcamp. The goal of this project is to recreate the landing page of the first week.
 
-## Tecnologías utilizadas
+## Technologies used
 
-Este proyecto se desarrolló utilizando las siguientes tecnologías:
+This project was developed using the following technologies:
 
--   HTML5
+- HTML5
 
-## Estructura del repositorio
+## Repository structure
 
-El repositorio se organiza de la siguiente manera:
+The repository is organized as follows:
 
--   Weekly-02: Contiene 'index.html' y 'assets'
--   index.html: Este archivo contiene la estructura HTML de la página de inicio.
--   assets: Este directorio contiene el subdirectorio 'img'
--   img: Este subdirectorio contiene todas las imágenes utilizadas en la página de inicio.
+- Weekly-02: Contains 'index.html' and 'assets'.
+- index.html: This file contains the HTML structure of the home page.
+- assets: This directory contains the subdirectory 'img'.
+- img: This subdirectory contains all the images used in the home page.
 
-## Instalación y configuración
+## Installation and configuration
 
-Para utilizar este proyecto, simplemente clone el repositorio en su máquina local:
+To use this project, simply clone the repository on your local machine:
 
-```bash
+```
 git clone https://github.com/Federico-Peralta/BaSP-M2023.git
 ```
 
-Luego, abra el archivo index.html en su navegador para ver la página de inicio.
+Then, open the index.html file in your browser to see the home page.
 
-## Contribuciones
+## Contributions
 
-Este proyecto es una tarea del bootcamp de Radium Rocket y, por lo tanto, no se aceptan contribuciones externas. Si tiene alguna pregunta o comentario, puede ponerse en contacto conmigo a través de mi perfil de GitHub.
+This project is a Radium Rocket bootcamp task and therefore no external contributions are accepted. If you have any questions or comments, you can contact me via my GitHub profile.
