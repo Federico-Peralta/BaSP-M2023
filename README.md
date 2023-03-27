@@ -12,7 +12,7 @@ This project was developed using the following technologies:
 
 The repository is organized as follows:
 
-- Weekly-02: Contains 'index.html' and 'assets'.
+- Week-02: Contains 'index.html' and 'assets'.
 - index.html: This file contains the HTML structure of the home page.
 - assets: This directory contains the subdirectory 'img'.
 - img: This subdirectory contains all the images used in the home page.
