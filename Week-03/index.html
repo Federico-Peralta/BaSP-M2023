@@ -37,23 +37,23 @@
                 <button class="button-sidebar">Contact</button>
             </li>
         </ul>
-        <div id="information-container">
-            <h2>Information</h2>
-            <ul>
-                <li class="information-list">
-                    <img class="information-img" src="../assets/img/email-icon.png" alt="email-icon">
-                    <p>E-mail: information@untitled.tld</p>
-                </li>
-                <li class="information-list">
-                    <img class="information-img" src="../assets/img/phone-icon.png" alt="phone-icon">
-                    <p>Cel: (000) 000-0000</p>
-                </li>
-                <li class="information-list">
-                    <img id="home-img" src="../assets/img/direction-icon.png" alt="direction-icon">
-                    <p>Direction: 1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
-                </li>
-            </ul>
-        </div>
+        <h2>Information</h2>
+        <ul class="information-container">
+            <li class="information-list">
+                <img class="information-img" src="../assets/img/email-icon.png" alt="email-icon">
+                <p class="list-paragraph"> E-mail: information@untitled.tld</p>
+            </li>
+            <li class="information-list">
+                <img class="information-img" src="../assets/img/phone-icon.png" alt="phone-icon">
+                <p class="list-paragraph"> Cel: (000) 000-0000</p>
+            </li>
+            <li class="information-list">
+                <img class="information-img" src="../assets/img/direction-icon.png" alt="direction-icon">
+                <p class="list-paragraph"> Direction: 1234 Somewhere Road</p>
+                <p class="list-paragraph-02">#8254 Nashville</p>
+                <p class="list-paragraph-02">TN 00000-0000</p>
+            </li>
+        </ul>
     </aside>
     <main>
         <img id="logo-img" src="../assets/img/img-02.png" alt="logo-img">
@@ -65,41 +65,45 @@
             </div>
             <div id="first-frame-paragraph">
                 <p>
-                    Aenean ornare velit lacus, ac varius enim ullamcorper eu. 
-                    Proin aliquam facilisis ante interdum congue. 
-                    Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. 
-                    Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. 
+                    Aenean ornare velit lacus, ac varius enim ullamcorper eu.
+                    Proin aliquam facilisis ante interdum congue.
+                    Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
+                    Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
                     Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
                 </p>
             </div>
         </section>
-        <section id="second-frame">
-            <article>
-                <img src="../assets/img/img-03.png" alt="appointment-img">
+        <hr>
+        <section>
+            <article class="second-frame">
+                <img class="second-frame-img" src="../assets/img/img-03.png" alt="appointment-img">
                 <h2>Appointment Booking</h2>
                 <p>
                     Aenean ornare velit lacus, ac varius enim ullamcorper eu.
                     Proin aliquam facilisis ante interdum congue.
                 </p>
+                </div>
             </article>
-            <article>
-                <img src="../assets/img/img-04.png" alt="calendar-img">
+            <article class="second-frame">
+                <img class="second-frame-img" src="../assets/img/img-04.png" alt="calendar-img">
                 <h2>Calendar and opening hours</h2>
                 <p>
                     Aenean ornare velit lacus, ac varius enim ullamcorper eu.
                     Proin aliquam facilisis ante interdum congue.
                 </p>
+                </div>
             </article>
-            <article>
-                <img src="../assets/img/img-05.png" alt="management-img">
+            <article class="second-frame">
+                <img id="second-frame-img-managment" src="../assets/img/img-05.png" alt="management-img">
                 <h2>Management and membership</h2>
                 <p>
                     Aenean ornare velit lacus, ac varius enim ullamcorper eu.
                     Proin aliquam facilisis ante interdum congue.
                 </p>
+                </div>
             </article>
-            <article>
-                <img src="../assets/img/img-06.png" alt="contact-img">
+            <article class="second-frame">
+                <img class="second-frame-img" src="../assets/img/img-06.png" alt="contact-img">
                 <h2>Contact form and suggestions</h2>
                 <p>
                     Aenean ornare velit lacus, ac varius enim ullamcorper eu.
@@ -107,37 +111,42 @@
                 </p>
             </article>
         </section>
-        <section>
+        <hr>
+        <section id="third-frame">
             <h2>Registration and/or claim</h2>
-            <label>Name</label>
-            <label>
-                <input type="text" placeholder="Enter your name">
-            </label>
-            <label>Last name</label>
-            <label>
-                <input type="text" placeholder="Enter your last name">
-            </label>
-            <label>E-mail</label>
-            <label>
-                <input type="text" placeholder="Enter your e-mail">
-            </label>
-            <label>
-                <input type="checkbox" name="first-checkbox" id="checkbox-01">
-                I want to know memberships and costs
-            </label>
-            <label>
-                <input type="checkbox" name="second-checkbox" id="checkbox-02">
-                I want to make a question or suggestion
-            </label>
-            <label>
-                <input type="checkbox" name="third-checkbox" id="checkbox-03">
-                I want to make a claim
-            </label>
-            <label> Comments </label>
-            <label>
-                <input type="text" name="comments" placeholder="Insert your comment">
-            </label>
-            <button>Send</button>
+            <form class="form-third-frame">
+                <div class="form-01">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="form-01">
+                    <label>Last name</label>
+                    <input type="text" placeholder="Enter your last name">
+                </div>
+                <div class="form-01">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="Enter your e-mail">
+                </div>
+            </form>
+            <form class="form-02-third-frame">
+                <div class="form-02">
+                    <input type="checkbox" name="first-checkbox" id="checkbox-01">
+                    <label>I want to know memberships and costs</label>
+                </div>
+                <div class="form-02">
+                    <input type="checkbox" name="second-checkbox" id="checkbox-02">
+                    <label>I want to make a question or suggestion</label>
+                </div>
+                <div class="form-02">
+                    <input type="checkbox" name="third-checkbox" id="checkbox-03">
+                    <label>I want to make a claim</label>
+                </div>
+                <div class="comments">
+                    <label> Comments </label>
+                    <input type="text" name="comments" placeholder="Insert your comment">
+                    <button>Send</button>
+                </div>
+            </form>
         </section>
         <section>
             <h2>About Us</h2>
@@ -149,16 +158,28 @@
         </section>
         <section>
             <h2>Activities</h2>
-            <img src="../assets/img/crossfit-img.png" alt="crossfit-img">
-            <p>Crossfit</p>
-            <img src="../assets/img/functional-img.png" alt="functional-img">
-            <p>Functional</p>
-            <img src="../assets/img/boxing-img.png" alt="boxing-img">
-            <p>Boxing</p>
-            <img src="../assets/img/spinning-img.png" alt="spinning-img">
-            <p>Spinning</p>
-            <img src="../assets/img/fitness-img.png" alt="fitness-img">
-            <p>Fitness</p>
+            <div id="activities-frame">
+                <div class="activity">
+                    <img src="../assets/img/crossfit-img.png" alt="crossfit-img">
+                    <p>Crossfit</p>
+                </div>
+                <div class="activity">
+                    <img src="../assets/img/functional-img.png" alt="functional-img">
+                    <p>Functional</p>
+                </div>
+                <div class="activity">
+                    <img src="../assets/img/boxing-img.png" alt="boxing-img">
+                    <p>Boxing</p>
+                </div>
+                <div class="activity">
+                    <img src="../assets/img/spinning-img.png" alt="spinning-img">
+                    <p>Spinning</p>
+                </div>
+                <div class="activity">
+                    <img src="../assets/img/fitness-img.png" alt="fitness-img">
+                    <p>Fitness</p>
+                </div>
+            </div>
         </section>
         <section>
             <h4>Membership Black</h4>

@@ -3,26 +3,30 @@ header {
     width: 100%;
     height: 70px;
     top: 0;
-    left: 0;   
+    left: 0;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-color: #373867;
 }
 
-header p{
+header p {
     text-align: center;
     padding-top: 30px;
 }
 
+#logo-img {
+    position: fixed;
+    bottom: 2px;
+    right: 0px;
+}
 
-aside {    
+aside {
     width: 335px;
     height: 100%;
     top: 70px;
     position: fixed;
     background-color: #F6F6F6;
-    
 }
 
 main {
@@ -30,7 +34,7 @@ main {
     margin-left: 335px;
 }
 
-#first-frame h1{
+#first-frame h1 {
     text-align: center;
 }
 
@@ -38,19 +42,19 @@ main {
     text-align: center;
 }
 
-.aside-buttons{
+.aside-buttons {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
 }
 
 
-#aside-paragraph{
-    background-color: blue;   
+#aside-paragraph {
+    background-color: blue;
     text-align: left;
 }
 
-.button-sidebar{
+.button-sidebar {
     background-color: #AACE9B;
     width: 238px;
     height: 49px;
@@ -66,61 +70,67 @@ main {
     text-align: center;
 }
 
-.img-buttons-sidebar{
+.img-buttons-sidebar {
     width: 30px;
     height: 30px;
     padding-left: 10px;
 }
 
-.img-buttons-sidebar-case{
+.img-buttons-sidebar-case {
     width: 30px;
     height: 22px;
     padding-left: 10px;
 }
 
-#information-container{
-    padding-top: 10px;
+.information-container {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
 }
 
-#information-container h2{
+aside h2 {
     text-align: center;
-    color:black;
     font-size: 20px;
-    font-weight: 700;
-    
+    font-weight: 700px;
+    margin-top: 20px;
 }
 
-#information-container ul{
-    padding: 0;
+.information-img {
+    position: relative;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
-#information-container li{
-    text-align: center;
-    padding: 8px;
+.information-paragraph {
+    bottom: 10px;
+    text-align: justify;
 }
 
-#information-container p{
-    padding-left: 10px;
+.information-list {
+    position: relative;
 }
 
-.information-img{
-    width: 30px;
-    height: 30px;
-    bottom: 100px;
+
+
+.list-paragraph {
+    display: inline-block;
 }
 
-.information-list{
-    padding: 5px;
-    display: flex;
+.list-paragraph-02 {
+    display: inline-block;
+    margin-left: 65px;
 }
 
-#home-img{
+#home-img {
     width: 20px;
     height: 20px;
     padding-left: 7px;
 }
 
-#search{
+#search {
     text-align: left;
     width: 220px;
     height: 36px;
@@ -132,23 +142,18 @@ main {
     background-color: #F6F6F6;
 }
 
-.search-icon{
+.search-icon {
     position: absolute;
     top: 30px;
     right: 80px;
 }
 
 
-article{
-    display: inline-block;
-    width: 50%;
-}
-
-#first-frame{
+#first-frame {
     text-align: center;
 }
 
-#first-frame h1{
+#first-frame h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     color: #373867;
@@ -156,33 +161,105 @@ article{
     margin-bottom: 20px;
 }
 
-#first-frame h2{
+#first-frame h2 {
     margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
     color: #423C3C;
 }
 
-#first-frame p{
-    margin: 80px; ;
+#first-frame p {
+    margin: 80px;
+    ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
 
-#second-frame{
-    display: flex;
+.second-frame-img {
+    width: 150px;
+    height: 150px;
+}
+
+#second-frame-img-managment {
+    width: 180px;
+    height: 150px;
+}
+
+.second-frame {
+    display: inline-block;
+    width: 35%;
+    margin-left: 90px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 30;
+    text-align: center;
+}
+
+.second-frame h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.second-frame p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+#third-frame h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #373867;
+    margin-bottom: 20px;
+}
+
+
+
+#activities-frame {
+    margin-left: 20px;
+}
+
+.activity {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 30%;
+    margin-top: 20px;
+}
+
+
+.form-third-frame{
+    padding: 15px;
+}
+
+.form-third-frame .form-01{
+    padding-bottom: 20px;
+}
+
+.form-third-frame{
+    display: block;
+}
+
+.form-third-frame input[type = "text"], .form-third-frame textarea{
+    padding: 8px;
     width: 100%;
-    flex-wrap: wrap;
-}
-
-#second-frame article{
-    min-width: 50%;
-}
-
-#logo-img{
-    position: fixed;
-    bottom: 2px;
-    right: 0px;
 }
 
 
+.form-02-third-frame{
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.form-02-third-frame .form-02{
+    padding-bottom: 10px;
+}
