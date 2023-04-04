@@ -268,6 +268,7 @@ aside h2 {
     width: 90px;
     height: 30px;
     margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -277,6 +278,7 @@ aside h2 {
     padding: 20px;
     color: #373867;
     font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #paragraph-fourth-frame {
@@ -286,7 +288,7 @@ aside h2 {
     text-align: center;
     width: 804px;
     height: 343px;
-
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
 
 }
@@ -321,17 +323,21 @@ aside h2 {
     font-size: 40px;
     font-weight: 700;
     color: #373867;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #membership-black-container {
     text-align: center;
     margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #membership-black-container li {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 #membership-black-header {
@@ -345,6 +351,9 @@ aside h2 {
 
 #membership-black-header h4 {
     padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -356,6 +365,8 @@ aside h2 {
 #membership-classic-container li {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 #membership-classic-header {
@@ -369,10 +380,42 @@ aside h2 {
 
 #membership-classic-header h4 {
     padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 #membership-only-container{
     text-align: center;
     margin-top: 50px;
+}
+
+#membership-only-container li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#membership-only-header{
+    width: 311px;
+    height: 40px;
+    background-color: #EDEDED;
+    text-align: center;
+    margin-left: 335px;
+}
+
+#membership-only-header h4{
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#membership-only-container-li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
