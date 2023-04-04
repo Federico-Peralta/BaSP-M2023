@@ -276,6 +276,30 @@ aside h2 {
 
 .comments button{
     width: 90px;
-    height: 40px;
+    height: 30px;
     margin-top: 10px;
+}
+
+
+#about-fourth-frame{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: #373867;
+}
+
+#paragraph-fourth-frame{
+    margin-left: 10%;
+    display: block;
+    background-color:#AACE9B;
+    text-align: center;
+    width: 804px;
+    height: 343px;
+
+    border-radius: 5px;
+    
+}
+
+#paragraph-fourth-frame p{
+   padding-top: 150px;
 }
