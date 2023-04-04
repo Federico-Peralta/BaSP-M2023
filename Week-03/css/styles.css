@@ -224,6 +224,77 @@ aside h2 {
 
 
 
+
+
+.form-third-frame {
+    padding: 15px;
+}
+
+.form-third-frame .form-01 {
+    padding-bottom: 20px;
+}
+
+.form-third-frame {
+    display: block;
+}
+
+.form-third-frame input[type="text"],
+.form-third-frame textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+
+.form-02-third-frame {
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.form-02-third-frame .form-02 {
+    padding-bottom: 20px;
+}
+
+.form-02-third-frame input[type="text"] {
+    padding: 8px;
+    width: 100%;
+}
+
+.comments {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.comments button {
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+#about-fourth-frame {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    color: #373867;
+    font-weight: 700;
+}
+
+#paragraph-fourth-frame {
+    margin-left: 10%;
+    display: block;
+    background-color: #AACE9B;
+    text-align: center;
+    width: 804px;
+    height: 343px;
+
+    border-radius: 5px;
+
+}
+
+#paragraph-fourth-frame p {
+    padding-top: 150px;
+}
+
 #activities-frame {
     margin-left: 20px;
 }
@@ -234,72 +305,74 @@ aside h2 {
     text-align: center;
     width: 30%;
     margin-top: 20px;
+    margin-left: 20px;
+}
+
+.activity p {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
-.form-third-frame{
-    padding: 15px;
-}
-
-.form-third-frame .form-01{
-    padding-bottom: 20px;
-}
-
-.form-third-frame{
-    display: block;
-}
-
-.form-third-frame input[type = "text"], .form-third-frame textarea{
-    padding: 8px;
-    width: 100%;
-}
-
-
-.form-02-third-frame{
-    padding-left: 15px;
-    padding-bottom: 30px;
-}
-
-.form-02-third-frame .form-02{
-    padding-bottom: 20px;
-}
-
-.form-02-third-frame input[type = "text"]{
-    padding: 8px;
-    width: 100%;
-}
-
-.comments{
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-.comments button{
-    width: 90px;
-    height: 30px;
-    margin-top: 10px;
-}
-
-
-#about-fourth-frame{
+#activities-h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 40px;
-    padding: 20px;
+    font-weight: 700;
     color: #373867;
 }
 
-#paragraph-fourth-frame{
-    margin-left: 10%;
-    display: block;
-    background-color:#AACE9B;
-    text-align: center;
-    width: 804px;
-    height: 343px;
 
-    border-radius: 5px;
-    
+#membership-black-container {
+    text-align: center;
+    margin-top: 50px;
 }
 
-#paragraph-fourth-frame p{
-   padding-top: 150px;
+#membership-black-container li {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#membership-black-header {
+    width: 311px;
+    height: 40px;
+    background-color: #2A2A32;
+    color: white;
+    text-align: center;
+    margin-left: 335px;
+}
+
+#membership-black-header h4 {
+    padding-top: 10px;
+}
+
+
+#membership-classic-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#membership-classic-container li {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#membership-classic-header {
+    width: 311px;
+    height: 40px;
+    background-color: #CCCBCB;
+    color: black;
+    text-align: center;
+    margin-left: 335px;
+}
+
+#membership-classic-header h4 {
+    padding-top: 10px;
+}
+
+
+#membership-only-container{
+    text-align: center;
+    margin-top: 50px;
 }
