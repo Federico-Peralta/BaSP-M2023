@@ -419,3 +419,24 @@ aside h2 {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+footer{
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 335px;
+}
+
+#footer-img-container{
+    width: 250px;
+    text-align: left;
+    display: inline-block;
+    
+}
+
+footer p{
+    display: inline-block;    
+}
+
+#footer-img-container img{
+    margin-left: 12px;
+}
