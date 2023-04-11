@@ -129,6 +129,30 @@
 }
 
 
+/*Fourth frame*/
+
+.fourth-frame{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #AACE9B;
+    width: 90%;
+    margin: 5%;
+    height: 2%;
+}
+
+#about-fourth-frame{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 2rem;
+    
+}
+
+#paragraph-fourth-frame{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 40%;
+}
 
 
 @media (min-width: 1024px) {

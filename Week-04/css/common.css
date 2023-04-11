@@ -4,6 +4,10 @@ body {
     font-size: 20px;
 }
 
+h2{
+    color: #373867;
+    font-weight: 600;
+}
 
 main {
     top: 0;
