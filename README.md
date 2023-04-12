@@ -34,7 +34,7 @@ The repository is organized as follows:
 To use the GitHub Page of this project, use this link
 
 ```
-federico-peralta.github.io
+federico-peralta.github.io/Week-04
 ```
 ## Installation and configuration
 
