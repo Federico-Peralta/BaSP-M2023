@@ -31,10 +31,10 @@ The repository is organized as follows:
 
 ## GitHub Pages
 
-To use the GitHub Page of this project, use this link
+To use the GitHub Page of the project of Week-04, use this link
 
 ```
-federico-peralta.github.io/Week-04
+federico-peralta.github.io/BaSP-M2023/Week-04
 ```
 ## Installation and configuration
 
