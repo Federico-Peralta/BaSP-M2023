@@ -262,7 +262,13 @@
 }
 
 footer{
+    display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+footer p{
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -294,4 +300,12 @@ footer{
         text-align: left;
     }
 
+    footer{
+        display: flex;
+        flex-direction: row;
+        margin-left: 25%;
+    }
+    .footer-img-container{
+        display: inline-block;
+    }
 }
