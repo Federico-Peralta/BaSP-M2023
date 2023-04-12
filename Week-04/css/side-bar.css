@@ -1,7 +1,5 @@
 aside{
     display: none;
-    width: 30%;
-    height: 100%;
     left: 0;
     background-color: #F6F6F6;
 }
@@ -11,10 +9,7 @@ aside ul{
 }
 
 .aside-buttons{
-    /*display: flex;*/
     width: 50%;   
-    /*flex-direction: column;*/
-    
 }
 
 .aside-container{
@@ -35,18 +30,26 @@ aside ul{
 
 .aside-container-bottom h2{
     text-align: center;
+    margin: 5%;
 }
+
+
 
 .container-top-item{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40%;
+    margin: 5%;
+}
+
+.container-top-item input{
+    padding: 2%;
 }
 
 .information-list{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -65,13 +68,10 @@ aside ul{
 
 .button-sidebar {
     background-color: #AACE9B;
-    width: 40%;
-    height: 50%;
+    width: 60%;
+    height: 90%;
     font-size: 1rem;
-    border-right: 5px;
-    border-left: 5px;
-    border-top: 2px;
-    border-bottom: 2px;
+    border: 2%;
     margin: 10px;
     border-radius: 10px;
     color: #2A2A32;
@@ -84,6 +84,7 @@ aside ul{
     margin-right: 10px;
     margin-top: 10px;
     margin-left: 30px;
+    height: 2vw;
 }
 
 #search {
@@ -101,7 +102,7 @@ aside ul{
 .search-icon {
     position: absolute;
     top: 40px;
-    right: 20px;
+    right: 5vh;
 }
 
 
@@ -112,5 +113,10 @@ aside ul{
         position: fixed;
         width: 30%;
         top: 10%;
+        height: 80vh;
     }
+    .sidebar-icon{
+        display: none;
+    }
+
 }
