@@ -38,6 +38,13 @@ main {
     right: 0px;
 }
 
+
+.sidebar-icon{
+    position: fixed;
+    top: 2px;
+    left: 20px;
+}
+
 footer {
     margin: auto;
     width: 80%;

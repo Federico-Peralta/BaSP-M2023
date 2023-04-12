@@ -257,6 +257,13 @@
 
 
 
+.footer-img-container{
+    gap: 50px;
+}
+
+footer{
+    gap: 20px;
+}
 
 @media (min-width: 1024px) {
     main {
