@@ -14,7 +14,7 @@ for(var i = 0; i < animals.length; i++){
 /* b. Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar 
 una alerta por cada palabra modificada.*/
 
-console.log('-Ejercicio 5.b:')
+console.log('-Ejercicio 5.b:');
 
 for(var i = 0; i < animals.length; i++){
     alert(animals[i].substring(0,1).toUpperCase() + animals[i].substring(1).toLowerCase());
@@ -25,7 +25,7 @@ for(var i = 0; i < animals.length; i++){
 recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. 
 Al final mostrar una única alerta con la cadena completa.*/
 
-console.log('-Ejercicio 5.c:')
+console.log('-Ejercicio 5.c:');
 
 var sentence = ' ';
 
@@ -40,7 +40,7 @@ Llenar el array con el número de la repetición, es decir que al final de la ej
 debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9. 
 Mostrar por la consola del navegador el array final (utilizar console.log).*/
 
-console.log('-Ejercicio 5.d:')
+console.log('-Ejercicio 5.d:');
 
 var emptyArray = [];
 
