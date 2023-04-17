@@ -9,7 +9,7 @@ console.log('-Ejercicio 6.a');
 var number1 = 40;
 var number2 = 15;
 
-function sumFunction(){
+function sumFunction(number1, number2){
     var numbersResult = number1 + number2;
     console.log(numbersResult);
 }
@@ -27,7 +27,8 @@ function sumFunction(){
         var numbersResult = number1 + number2;
         console.log(numbersResult);
     }else{
-        alert('Los valores no son numericos', NaN)
+        alert('Los valores no son numericos')
+        return NaN;
     } ;
 };
 
@@ -43,7 +44,9 @@ var number = 3;
 function validateInteger(number){
     if(number % 1 == 0){
         return true;
-    };
+    }else{
+        return false;
+    }
 };
 
 validateInteger();
@@ -61,14 +64,26 @@ function numberFunction(){
         console.log(numbersResult);
         if(validateInteger(number1) === true && validateInteger(number2) === true){
             console.log('Los numeros son enteros');
-        } else{           
-            alert('Error');
-            console.log(Math.round(number1));
-            console.log(Math.round(number2));
+        }else if(validateInteger(number1) === false && validateInteger(number2) === true){           
+            number1 = Math.round(number1);
+            alert('Error, numero ingresado no es entero.');
+            console.log(number1);
+            return number1;
+        }else if(validateInteger(number1) === true && validateInteger(number2) === false){
+            number2 = Math.round(number2);
+            alert('Error,numero ingresado no es entero.'); 
+            console.log(number2);
+            return number2;
+        }else{
+            alert('Error, los numeros ingresados no son enteros');
+            number1 = Math.round(number1);
+            number2 = Math.round(number2);
+            console.log(number1, number2);
+            return number1, number2;
         }
     }else{
         alert('Los valores no son numericos', NaN)
-    }
+    };
     
 }
 
@@ -81,16 +96,28 @@ llamarla dentro de una nueva función probando que todo siga funcionando igual q
 console.log('-Ejercicio 6.e');
 
 number1 = 10.6;
-number2 = 60;
+number2 = 60.2;
 
 function validationFunction(){
     if(validateInteger(number1) === true && validateInteger(number2) === true){
         console.log('Los numeros son enteros');
-    } else{           
-        alert('Error');
-        console.log(Math.round(number1));
-        console.log(Math.round(number2));
-    };
+    }else if(validateInteger(number1) === false && validateInteger(number2) === true){           
+        number1 = Math.round(number1);
+        alert('Error, numero ingresado no es entero.');
+        console.log(number1);
+        return number1;
+    }else if(validateInteger(number1) === true && validateInteger(number2) === false){
+        number2 = Math.round(number2);
+        alert('Error, numero ingresado no es entero.'); 
+        console.log(number2);
+        return number2;
+    }else{
+        alert('Error, los numeros ingresados no son enteros');
+        number1 = Math.round(number1);
+        number2 = Math.round(number2);
+        console.log(number1, number2);
+        return number1, number2;
+    }
 };
 
 function tryFunction(){

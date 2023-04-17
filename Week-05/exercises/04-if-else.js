@@ -26,6 +26,7 @@ if(num >= 0.5){
 console.log('-Ejercicio 4.b:');
 
 var age = Math.random() * 100;
+age = Math.round(age);
 
 if(age < 2){
     alert('Bebe');
