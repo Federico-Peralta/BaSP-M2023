@@ -36,9 +36,9 @@ if(age < 2){
 }else if((age > 20) && (age < 30)){
     alert('Joven');
 }else if((age > 31) && (age < 60)){
-    alert('Adulto')
+    alert('Adulto');
 }else if((age > 61) && (age < 75)){
     alert('Adulto mayor');
 }else{
     alert('Anciano');
-}
+};

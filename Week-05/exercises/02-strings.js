@@ -61,7 +61,7 @@ ambas palabras en mayúscula y las demás letras en minúscula
 console.log('-Ejercicio 2.d:');
 
 var twoWords = 'excavacion extranjera';
-var espacio = twoWords.indexOf(' ');
-var twoWordsResult = twoWords.substring(0,1).toUpperCase() + twoWords.substring(1, espacio).toLowerCase() + twoWords.substring(espacio, espacio + 2).toUpperCase() + twoWords.substring(espacio + 2, twoWords.length).toLowerCase();
+var space = twoWords.indexOf(' ');
+var twoWordsResult = twoWords.substring(0,1).toUpperCase() + twoWords.substring(1, space).toLowerCase() + twoWords.substring(space, space + 2).toUpperCase() + twoWords.substring(space + 2, twoWords.length).toLowerCase();
 
 console.log(twoWordsResult);
