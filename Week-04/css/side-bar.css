@@ -31,6 +31,7 @@ aside ul{
 .aside-container-bottom h2{
     text-align: center;
     margin: 5%;
+    font-size: 1.6rem;
 }
 
 
@@ -105,13 +106,16 @@ aside ul{
     right: 5vh;
 }
 
+.list-paragraph{
+    font-size: 1rem;
+}
 
 
 @media (min-width: 1024px){
     aside{
         display: flex;
         position: fixed;
-        width: 30%;
+        width: 25%;
         top: 10%;
         height: 90%;
     }

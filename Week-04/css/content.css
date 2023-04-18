@@ -5,7 +5,7 @@
     text-align: center;
     color: #373867;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 2.5rem;
 }
 
 .top-img {
@@ -22,13 +22,14 @@
 #first-frame-paragraph h2 {
     margin-bottom: 40px;
     text-align: center;
-    font-size: 36px;
+    font-size: 2rem;
     color: #423C3C;
 }
 
 #first-frame-paragraph p {
     text-align: center;
     margin-bottom: 40px;
+    font-size: 1rem;
 }
 
 
@@ -41,16 +42,21 @@
 
 
 .second-frame-img {
-    width: 150px;
-    height: 150px;
+    width: 10vw;
+    height: auto;
+    object-fit: contain;
+    margin: 6%;
+}
+
+#second-frame-img-managment {
+    width: 10vw;
+    height: auto;
     object-fit: contain;
     margin: 6%;
 }
 
 .second-frame h2 {
-    max-width: 60%;
     text-align: center;
-    margin-left: 10%;
 }
 
 
@@ -68,7 +74,9 @@
 
 /*Third frame*/
 
-
+.form-01-container label{
+    font-size: 1.5rem;
+}
 
 .form-01-container h2 {
     text-align: center;
@@ -83,6 +91,7 @@
     margin-bottom: 5%;
     text-align: center;
 }
+
 
 .form-01 label {
     margin-bottom: 2%;
@@ -101,29 +110,39 @@
 }
 
 
-.form-02-third-frame{
+.form-02-third-frame {
     padding-left: 2%;
     padding-right: 2%;
-    
+
 }
 
-.form-02{
+
+
+.form-02 {
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.comments input{
+.form-02 label{
+    font-size: 1.2rem;
+}
+
+.comments input {
     padding: 5%;
     margin-bottom: 2%;
     border-radius: 2%;
 }
 
-.comments button{
+.comments button {
     padding: 2%;
     border-radius: 2%;
 }
 
-#comment{
+.comments label{
+    font-size: 1.5rem;
+}
+
+#comment {
     margin-top: 5%;
     margin-bottom: 2%;
 }
@@ -131,7 +150,7 @@
 
 /*Fourth frame*/
 
-.fourth-frame{
+.fourth-frame {
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -141,32 +160,35 @@
     height: 2%;
 }
 
-#about-fourth-frame{
+#about-fourth-frame {
     margin-top: 2%;
     margin-bottom: 5%;
     font-size: 2rem;
-    
+
 }
 
-#paragraph-fourth-frame{
+#paragraph-fourth-frame {
     margin-top: 2%;
     margin-bottom: 5%;
     width: 40%;
 }
 
+#paragraph-fourth-frame p{
+    font-size: 1.2rem;
+}
 
 /*Fifth Frame*/
 
-.fifth-frame{
+.fifth-frame {
     width: 100%;
 }
 
-.fifth-frame h2{
+.fifth-frame h2 {
     text-align: center;
     font-size: 2rem;
 }
 
-.activities-frame{
+.activities-frame {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -174,7 +196,7 @@
     width: 100%;
 }
 
-.activity{
+.activity {
     display: inline-block;
     width: 30%;
     margin: auto;
@@ -183,12 +205,13 @@
     margin: 25px 15px;
 }
 
-.activity p{
+.activity p {
+    font-size: 1.3rem;
     text-align: center;
     font-weight: 600;
 }
 
-.activity-img{
+.activity-img {
     width: 260px;
     height: 200px;
     object-fit: contain;
@@ -196,20 +219,28 @@
 
 /*Sixth frame*/
 
-.sixth-frame{
+.sixth-frame {
     align-items: center;
 }
 
-#membership-black-container{
+.sixth-frame h4{
+    font-size: 1.3rem;
+}
+
+.sixth-frame p{
+    font-size: 1.1rem;
+}
+
+#membership-black-container {
     text-align: center;
 }
 
-#membership-black-container p{
+#membership-black-container p {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#membership-black-header{
+#membership-black-header {
     align-items: center;
     background-color: #2A2A32;
     width: 353px;
@@ -218,16 +249,16 @@
     color: white;
 }
 
-#membership-classic-container{
+#membership-classic-container {
     text-align: center;
 }
 
-#membership-classic-container p{
+#membership-classic-container p {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#membership-classic-header{
+#membership-classic-header {
     align-items: center;
     background-color: #CCCBCB;
     width: 353px;
@@ -237,16 +268,16 @@
 }
 
 
-#membership-only-container{
+#membership-only-container {
     text-align: center;
 }
 
-#membership-only-container p{
+#membership-only-container p {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#membership-only-header{
+#membership-only-header {
     align-items: center;
     background-color: #EDEDED;
     width: 353px;
@@ -257,24 +288,25 @@
 
 
 
-.footer-img-container{
+.footer-img-container {
     gap: 50px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
 
 @media (min-width: 1024px) {
     main {
         width: 70%;
-        margin-left: 30%;
+        margin-left: 25%;
+        padding-left: 4%;
     }
 
     #first-frame-paragraph {
@@ -292,20 +324,24 @@ footer p{
 
     .second-frame-article-01 {
         display: flex;
-        width: 80%;
+        width: 100%;
         justify-content: space-around;
+
     }
 
-    .form-01{
+
+
+    .form-01 {
         text-align: left;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: row;
         margin-left: 30%;
     }
-    .footer-img-container{
+
+    .footer-img-container {
         display: inline-block;
     }
 }
