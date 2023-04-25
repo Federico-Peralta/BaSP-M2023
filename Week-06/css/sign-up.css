@@ -65,3 +65,8 @@ main {
   top: 10%;
   right: 0;
 }
+
+.red {
+  margin-top: 2%;
+  color: red;
+}
