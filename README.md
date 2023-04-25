@@ -1,8 +1,8 @@
-# Federico Peralta - BASP-M2023 
+# Federico Peralta - BASP-M2023
 
 This repository contains the source code and the necessary files of the landing page requested by the Radium Rocket bootcamp. The goal of this project is to recreate the landing page of the first week. Now with CSS to give style to the page.
 
-*NEW* JavaScript included
+_NEW_ JavaScript included
 
 ## Technologies used
 
@@ -20,6 +20,7 @@ The repository is organized as follows:
 - Week-03: Contains 'index.html' and the directory 'css'.
 - Week-04: Contains 'index.html' and the directory 'css'.
 - Week-05: Contains 'index.html' and the directory 'exercises'.
+- Week-06: Contains the directorys 'css', 'js', 'views' and a PDF
 - assets: This directory contains the subdirectory 'img'.
 - img: This subdirectory contains all the images used in the home page.
 - index.html: This file contains the HTML structure of the home page.
@@ -32,15 +33,18 @@ The repository is organized as follows:
 - header.css: This file contains all the styles used in <header>.
 - side-bar: This file contains all the styles used in <aside>.
 - exercises: This subdirectory contains all the files .js with exercises.
-
+- Week-06/css: Contains all the styles used.
+- Week-06/js: Contains all the js script.
+- Week-06/views: Contains all the html files.
 
 ## GitHub Pages
 
-To use the GitHub Page of the project of Week-05, use this link
+To use the GitHub Page of the project of Week-06, use this link
 
 ```
-federico-peralta.github.io/BaSP-M2023/Week-05
+federico-peralta.github.io/BaSP-M2023/Week-06
 ```
+
 ## Installation and configuration
 
 To use this project, simply clone the repository on your local machine:
