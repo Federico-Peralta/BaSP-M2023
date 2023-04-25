@@ -42,7 +42,7 @@ The repository is organized as follows:
 To use the GitHub Page of the project of Week-06, use this link
 
 ```
-federico-peralta.github.io/BaSP-M2023/Week-06
+federico-peralta.github.io/BaSP-M2023/Week-06/views/index.html
 ```
 
 ## Installation and configuration
