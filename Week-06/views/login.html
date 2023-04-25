@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <script defer src="../js/login.js"></script>
   </head>
   <body>
     <header>
@@ -30,11 +31,13 @@
         <form>
           <div class="flex-column">
             <label>Email</label>
-            <input type="text" class="inputs" />
+            <input id="email-input" type="text" class="inputs" />
+            <p id="email-message"></p>
           </div>
           <div class="flex-column">
             <label>Password</label>
-            <input type="password" class="inputs" />
+            <input id="password-input" type="password" class="inputs" />
+            <p id="password-message"></p>
           </div>
           <div class="remember-container flex">
             <input type="checkbox" name="remember-me" />
@@ -44,7 +47,7 @@
             </a>
           </div>
           <div class="button-container flex">
-            <button>Continue</button>
+            <button id="login-button">Login</button>
           </div>
         </form>
       </div>
