@@ -5,18 +5,19 @@ var dniInp = document.getElementById("dni-input");
 var emailInp = document.getElementById("email-input");
 var dateBirInp = document.getElementById("date-birth-input");
 var cellpInp = document.getElementById("cellphone-input");
-var adressInp = document.getElementById("adress-input");
+var addressInp = document.getElementById("address-input");
 var locatInp = document.getElementById("location-input");
 var postalInp = document.getElementById("postal-input");
 var passInp = document.getElementById("password-input");
 var repeatPassInp = document.getElementById("repeat-password-input");
+var button = document.getElementById("button-register");
 var validName;
 var validLastNam;
 var validDni;
 var validEmail;
 var validDate;
 var validCellp;
-
+var validAddress;
 var locationValid;
 var postalCodeValid;
 var passwordValid;
@@ -221,12 +222,43 @@ function cellphoneFocus() {
   document.getElementById("cellphone-p").textContent = "";
 }
 
-// Adress validation
+// Address validation
 
-//adressInp.addEventListener("blur");
-//adressInp.addEventListener("focus");
+addressInp.addEventListener("blur", addressValidation);
+addressInp.addEventListener("focus", addressFocus);
 
-//function adressValidation() {}
+function addressValidation() {
+  var address = addressInp.value;
+  if (address.length < 5) {
+    document.getElementById("address-p").textContent = "Enter a valid address";
+  }
+  var spaceInMiddle =
+    address.indexOf(" ") > 0 && address.indexOf(" ") < address.length - 1;
+  if (!spaceInMiddle) {
+    document.getElementById("address-p").textContent = "Enter a valid address";
+  }
+  var letterFound = false;
+  var numberFound = false;
+  for (var i = 0; i < address.length; i++) {
+    var character = address[i];
+    if (isNaN(parseInt(character))) {
+      letterFound = true;
+    } else {
+      numberFound = true;
+    }
+    if (letterFound && numberFound) {
+      break;
+    }
+  }
+  if (!letterFound || !numberFound) {
+    document.getElementById("address-p").textContent = "Enter a valid address";
+  }
+  validAddress = true;
+}
+
+function addressFocus() {
+  document.getElementById("address-p").textContent = "";
+}
 
 // Location validation
 
@@ -352,4 +384,49 @@ function repeatPasswordValidation() {
 
 function repeatPasswordFocus() {
   document.getElementById("repeat-password").textContent = "";
+}
+
+// Button function
+
+button.addEventListener("click", registerButton);
+
+function registerButton() {
+  if (
+    validName &&
+    validLastNam &&
+    validDni &&
+    validEmail &&
+    validDate &&
+    validCellp &&
+    validAddress &&
+    locationValid &&
+    postalCodeValid &&
+    passwordValid &&
+    repeatPasswordValid
+  ) {
+    alert(
+      "Name: " +
+        nameInp.value +
+        " Last Name: " +
+        lastNamInp.value +
+        " DNI: " +
+        dniInp.value +
+        " Email: " +
+        emailInp.value +
+        " DateBirth: " +
+        dateBirInp.value +
+        " Cellphone: " +
+        cellpInp.value +
+        " Address: " +
+        addressInp.value +
+        " Location: " +
+        locatInp.value +
+        " Postal Code: " +
+        postalInp.value +
+        " Password: " +
+        passInp.value
+    );
+  } else {
+    alert("Complete the missing fields");
+  }
 }
