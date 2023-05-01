@@ -70,3 +70,10 @@ main {
   margin-top: 2%;
   color: red;
 }
+
+@media (max-width: 1023px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
