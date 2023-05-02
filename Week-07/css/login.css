@@ -76,6 +76,11 @@ main {
   color: red;
 }
 
+#sign-up-redirection {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
 #password-message {
   margin-top: 2%;
   color: red;

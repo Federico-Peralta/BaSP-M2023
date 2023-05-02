@@ -71,6 +71,10 @@ main {
   color: red;
 }
 
+#login-redirection {
+  margin-bottom: 2%;
+}
+
 @media (max-width: 1023px) {
   .flex-container {
     flex-direction: column;
