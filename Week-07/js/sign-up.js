@@ -36,7 +36,6 @@ function nameValidation() {
     console.log(nameLength);
     for (var i = 0; i < nameLength.length; i++) {
       let char = nameLength[i];
-      console.log(nameLength[i]);
       if (char >= "A" && char <= "Z") {
         hasLetters = true;
         validName = true;
@@ -72,7 +71,6 @@ function lastNameValidation() {
   if (lastNameLength.length > 3) {
     for (var i = 0; i < lastNameLength.length; i++) {
       let char = lastNameLength[i];
-      console.log(lastNameLength[i]);
       if (char >= "A" && char <= "Z") {
         hasLetters = true;
         validLastNam = true;
@@ -110,7 +108,6 @@ function dniValidation() {
   if (dniLong.length > 7) {
     for (var i = 0; i < dniLong.length; i++) {
       let numb = dniLong[i];
-      console.log(numb[i]);
       if (numb >= "A" && numb <= "Z") {
         hasLetters = true;
       } else if (numb >= "a" && numb <= "z") {
@@ -277,11 +274,9 @@ function locationValidation() {
         hasLetters = true;
       } else if (char >= "a" && char <= "z") {
         hasLetters = true;
-      } else if (char >= "0" && char <= "9") {
-        hasNumber = true;
       }
     }
-    if (hasNumber && hasLetters) {
+    if (hasLetters) {
       locationValid = true;
     } else {
       document.getElementById("location-p").textContent =
@@ -408,28 +403,56 @@ function registerButton() {
     passwordValid &&
     repeatPasswordValid
   ) {
-    alert(
-      "Name: " +
-        nameInp.value +
-        " Last Name: " +
-        lastNamInp.value +
-        " DNI: " +
-        dniInp.value +
-        " Email: " +
-        emailInp.value +
-        " DateBirth: " +
-        dateBirInp.value +
-        " Cellphone: " +
-        cellpInp.value +
-        " Address: " +
-        addressInp.value +
-        " Location: " +
-        locatInp.value +
-        " Postal Code: " +
-        postalInp.value +
-        " Password: " +
-        passInp.value
-    );
+    let url =
+      "https://api-rest-server.vercel.app/signup" +
+      "?name=" +
+      nameInp.value +
+      "&lastName=" +
+      lastNamInp.value +
+      "&dni=" +
+      dniInp.value +
+      "&dob=" +
+      dateBirInp.value +
+      "&phone=" +
+      cellpInp.value +
+      "&address=" +
+      addressInp.value +
+      "&city=" +
+      locatInp.value +
+      "&zip=" +
+      postalInp.value +
+      "&email=" +
+      emailInp.value +
+      "&password=" +
+      passInp.value;
+
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (response) {
+        if (response.success) {
+          localStorage.setItem("name", nameInp.value);
+          localStorage.setItem("lastName", lastNamInp.value);
+          localStorage.setItem("dni", dniInp.value);
+          localStorage.setItem("dob", dateBirInp.value);
+          localStorage.setItem("phone", cellpInp.value);
+          localStorage.setItem("address", addressInp.value);
+          localStorage.setItem("city", locatInp.value);
+          localStorage.setItem("zip", postalInp.value);
+          localStorage.setItem("email", email.value);
+          localStorage.setItem("password", passInp.value);
+        } else {
+          var errorsMessage = "";
+          response.errors.forEach((error) => {
+            errorsMessage += error.msg;
+          });
+          throw new Error(errorsMessage);
+        }
+      })
+      .catch(function (errors) {
+        alert(errors);
+      });
   } else {
     alert("Complete the missing fields");
   }
