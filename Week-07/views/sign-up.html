@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <script defer src="../js/sign-up.js"></script>
+  </head>
+  <body>
+    <header>
+      <p>Mega Rocket SA</p>
+    </header>
+    <a href="../views/index.html">
+      <img
+        class="arrow-img"
+        src="../../assets/img/arrow.png"
+        alt="arrow-icon"
+      />
+    </a>
+    <img id="logo-img" src="../../assets/img/img-02.png" alt="logo-img" />
+    <main>
+      <div class="title-register">
+        <h1>Register</h1>
+      </div>
+      <div class="form-register-container">
+        <form class="form-container-signup">
+          <div class="flex-container">
+            <div class="flex-container-01">
+              <div class="labels-containers flex-column">
+                <label>Name</label>
+                <input id="name-input" type="text" />
+                <p id="name-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Lastname</label>
+                <input id="last-name-input" type="text" />
+                <p id="last-name-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>DNI</label>
+                <input id="dni-input" type="text" />
+                <p id="dni-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Email</label>
+                <input id="email-input" type="text" />
+                <p id="email-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Date of birth</label>
+                <input id="date-birth-input" type="date" />
+                <p id="date-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Cellphone</label>
+                <input id="cellphone-input" type="text" />
+                <p id="cellphone-p" class="red"></p>
+              </div>
+            </div>
+            <div class="flex-container-02">
+              <div class="labels-containers flex-column">
+                <label>Address</label>
+                <input id="address-input" type="text" />
+                <p id="address-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Location</label>
+                <input id="location-input" type="text" />
+                <p id="location-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Postal code</label>
+                <input id="postal-input" type="text" />
+                <p id="postal-code-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Password</label>
+                <input id="password-input" type="password" />
+                <p id="password-p" class="red"></p>
+              </div>
+              <div class="labels-containers flex-column">
+                <label>Repeat Password</label>
+                <input id="repeat-password-input" type="password" />
+                <p id="repeat-password" class="red"></p>
+              </div>
+            </div>
+          </div>
+          <div class="button-continue-container flex">
+            <button type="submit" id="button-register">Register</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

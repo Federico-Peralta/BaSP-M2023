@@ -1,0 +1,79 @@
+main {
+  margin-top: 8%;
+}
+
+.title-register {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-register-container {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+}
+
+.flex-container label {
+  margin-bottom: 5%;
+}
+
+.flex-container input {
+  font-size: 1.5rem;
+  height: 40px;
+}
+
+.flex-container-01 {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flex-container-02 {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.labels-containers {
+  padding: 1%;
+  margin: 5%;
+}
+
+.form-container-signup {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-continue-container {
+  margin-bottom: 2%;
+}
+
+.button-continue-container button {
+  width: 20vw;
+  height: 8vh;
+  background-color: #aace9b;
+}
+
+.arrow-img {
+  position: fixed;
+  top: 10%;
+  right: 0;
+}
+
+.red {
+  margin-top: 2%;
+  color: red;
+}
+
+@media (max-width: 1023px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

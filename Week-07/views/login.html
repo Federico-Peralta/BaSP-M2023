@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script defer src="../js/login.js"></script>
+  </head>
+  <body>
+    <header>
+      <p>Mega Rocket SA</p>
+    </header>
+    <a href="../views/index.html">
+      <img
+        class="arrow-img"
+        src="../../assets/img/arrow.png"
+        alt="arrow-icon"
+      />
+    </a>
+    <main>
+      <div class="title-container">
+        <h2>Log in</h2>
+        <img src="../../assets/img/img-02.png" alt="icon" />
+      </div>
+      <div class="form-container">
+        <form id="form-js">
+          <div class="flex-column">
+            <label>Email</label>
+            <input id="email-input" type="text" class="inputs" />
+            <p id="email-message"></p>
+          </div>
+          <div class="flex-column">
+            <label>Password</label>
+            <input id="password-input" type="password" class="inputs" />
+            <p id="password-message"></p>
+          </div>
+          <div class="remember-container flex">
+            <input type="checkbox" name="remember-me" />
+            <label>Remember me</label>
+            <a>
+              <p>Forgot Password?</p>
+            </a>
+          </div>
+          <div class="button-container flex">
+            <button id="login-button">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
