@@ -33,7 +33,6 @@ function nameValidation() {
   let hasNumber = false;
   let nameLength = nameInp.value;
   if (nameLength.length > 3) {
-    console.log(nameLength);
     for (var i = 0; i < nameLength.length; i++) {
       let char = nameLength[i];
       if (char >= "A" && char <= "Z") {
@@ -389,6 +388,30 @@ button.addEventListener("click", function (event) {
   registerButton();
 });
 
+window.addEventListener("load", function () {
+  nameInp.value = localStorage.getItem("name");
+  lastNamInp.value = localStorage.getItem("lastName");
+  dniInp.value = localStorage.getItem("dni");
+  dateBirInp.value = localStorage.getItem("dob");
+  cellpInp.value = localStorage.getItem("phone");
+  addressInp.value = localStorage.getItem("address");
+  locatInp.value = localStorage.getItem("city");
+  postalInp.value = localStorage.getItem("zip");
+  emailInp.value = localStorage.getItem("email");
+  passInp.value = localStorage.getItem("password");
+  repeatPassInp.value = localStorage.getItem("password");
+  nameInp.focus();
+  lastNamInp.focus();
+  dniInp.focus();
+  dateBirInp.focus();
+  cellpInp.focus();
+  addressInp.focus();
+  locatInp.focus();
+  postalInp.focus();
+  emailInp.focus();
+  passInp.focus();
+  repeatPassInp.focus();
+});
 function registerButton() {
   if (
     validName &&
@@ -403,6 +426,11 @@ function registerButton() {
     passwordValid &&
     repeatPasswordValid
   ) {
+    var newDate = new Date(dateBirInp.value);
+    var day = (newDate.getDate() + 1).toString().padStart(2, "0");
+    var month = (newDate.getMonth() + 1).toString().padStart(2, "0");
+    var year = newDate.getFullYear();
+    let dateParam = month + "/" + day + "/" + year;
     let url =
       "https://api-rest-server.vercel.app/signup" +
       "?name=" +
@@ -412,7 +440,7 @@ function registerButton() {
       "&dni=" +
       dniInp.value +
       "&dob=" +
-      dateBirInp.value +
+      dateParam +
       "&phone=" +
       cellpInp.value +
       "&address=" +
@@ -440,8 +468,9 @@ function registerButton() {
           localStorage.setItem("address", addressInp.value);
           localStorage.setItem("city", locatInp.value);
           localStorage.setItem("zip", postalInp.value);
-          localStorage.setItem("email", email.value);
+          localStorage.setItem("email", emailInp.value);
           localStorage.setItem("password", passInp.value);
+          alert(response.msg);
         } else {
           var errorsMessage = "";
           response.errors.forEach((error) => {
